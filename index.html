@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArmaFleet - Premium Luxury Transportation Chicago</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-wrapper">
+                <div class="logo-shield">🅐</div>
+                <span class="logo-text">ArmaFleet</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#fleet" class="nav-link">Fleet</a>
+                <a href="#booking" class="nav-link active">Book</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-stars"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="word">PREMIUM</span>
+                <span class="word">LUXURY</span>
+                <span class="word">TRANSPORTATION</span>
+            </h1>
+            <p class="hero-subtitle">Experience Elegance in Every Mile</p>
+            <button class="hero-btn" onclick="smoothScroll('booking')">
+                <span>Book Your Ride</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+        <div class="hero-gradient"></div>
+    </section>
+
+    <!-- Fleet Section -->
+    <section class="fleet" id="fleet">
+        <div class="section-title">
+            <h2>Our Premium Fleet</h2>
+            <p>Choose Your Perfect Ride</p>
+        </div>
+        
+        <div class="fleet-container">
+            <!-- Sedan Card -->
+            <div class="fleet-card" style="--card-index: 0">
+                <div class="card-glow"></div>
+                <div class="card-icon">🚗</div>
+                <h3>Luxury Sedan</h3>
+                <p class="card-subtitle">Up to 3 Passengers</p>
+                <div class="card-specs">
+                    <div class="spec">
+                        <span class="spec-label">Base Fare</span>
+                        <span class="spec-value">$25</span>
+                    </div>
+                    <div class="spec">
+                        <span class="spec-label">Per Mile</span>
+                        <span class="spec-value">$2.50</span>
+                    </div>
+                    <div class="spec">
+                        <span class="spec-label">Minimum</span>
+                        <span class="spec-value">$60</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SUV Card -->
+            <div class="fleet-card featured" style="--card-index: 1">
+                <div class="featured-badge">MOST POPULAR</div>
+                <div class="card-glow"></div>
+                <div class="card-icon">🏎️</div>
+                <h3>Cadillac Escalade V</h3>
+                <p class="card-subtitle">Up to 6 Passengers</p>
+                <div class="card-specs">
+                    <div class="spec">
+                        <span class="spec-label">Base Fare</span>
+                        <span class="spec-value">$35</span>
+                    </div>
+                    <div class="spec">
+                        <span class="spec-label">Per Mile</span>
+                        <span class="spec-value">$3.50</span>
+                    </div>
+                    <div class="spec">
+                        <span class="spec-label">Minimum</span>
+                        <span class="spec-value">$85</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Premium Card -->
+            <div class="fleet-card" style="--card-index: 2">
+                <div class="card-glow"></div>
+                <div class="card-icon">⭐</div>
+                <h3>Premium Service</h3>
+                <p class="card-subtitle">Hourly & Events</p>
+                <div class="card-specs">
+                    <div class="spec">
+                        <span class="spec-label">Sedan/Hr</span>
+                        <span class="spec-value">$60</span>
+                    </div>
+                    <div class="spec">
+                        <span class="spec-label">SUV/Hr</span>
+                        <span class="spec-value">$80</span>
+                    </div>
+                    <div class="spec">
+                        <span class="spec-label">Minimum</span>
+                        <span class="spec-value">3 Hrs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature-item">
+            <i class="fas fa-clock"></i>
+            <h4>24/7 Available</h4>
+            <p>Round the clock service</p>
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-star"></i>
+            <h4>Professional Drivers</h4>
+            <p>Vetted & Experienced</p>
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-shield-alt"></i>
+            <h4>Safe & Secure</h4>
+            <p>Your safety matters</p>
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <h4>Real-time Tracking</h4>
+            <p>Know where you're going</p>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking" id="booking">
+        <div class="booking-container">
+            <div class="booking-header">
+                <h2>Book Your Ride</h2>
+                <p>Fast, Easy & Secure</p>
+            </div>
+
+            <form id="bookingForm" class="booking-form">
+                <div class="form-grid">
+                    <!-- Row 1 -->
+                    <div class="form-group">
+                        <label><i class="fas fa-envelope"></i> Email</label>
+                        <input type="email" name="email" required placeholder="your@email.com">
+                        <span class="form-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-user"></i> Full Name</label>
+                        <input type="text" name="fullName" required placeholder="John Doe">
+                        <span class="form-error"></span>
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="form-group">
+                        <label><i class="fas fa-phone"></i> Phone</label>
+                        <input type="tel" name="phone" required placeholder="+1-312-555-0000">
+                        <span class="form-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-users"></i> Passengers</label>
+                        <input type="number" name="passengers" required min="1" max="6" placeholder="1">
+                        <span class="form-error"></span>
+                    </div>
+
+                    <!-- Row 3 -->
+                    <div class="form-group full-width">
+                        <label><i class="fas fa-map-pin"></i> Pickup Location</label>
+                        <input type="text" name="pickup" required placeholder="O'Hare International Airport, Terminal 5, Chicago, IL 60666">
+                        <span class="form-error"></span>
+                    </div>
+
+                    <!-- Row 4 -->
+                    <div class="form-group full-width">
+                        <label><i class="fas fa-location-dot"></i> Drop-off Location</label>
+                        <input type="text" name="dropoff" required placeholder="123 Michigan Ave, Chicago, IL 60601">
+                        <span class="form-error"></span>
+                    </div>
+
+                    <!-- Row 5 -->
+                    <div class="form-group">
+                        <label><i class="fas fa-calendar"></i> Pickup Date</label>
+                        <input type="date" name="pickupDate" required>
+                        <span class="form-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-clock"></i> Pickup Time</label>
+                        <input type="time" name="pickupTime" required>
+                        <span class="form-error"></span>
+                    </div>
+
+                    <!-- SERVICE TYPE SELECT -->
+                        <div class="form-group">
+                            <label><i class="fas fa-car"></i> Service Type</label>
+                            <select name="serviceType" required>
+                                <option value="">📍 Select Service...</option>
+                                <optgroup label="✈️ AIRPORT TRANSFERS">
+                                    <option value="Airport Pickup (O'Hare)">✈️ Airport Pickup (O'Hare) - Est: $120 (Sedan) / $160 (SUV)</option>
+                                    <option value="Airport Pickup (Midway)">✈️ Airport Pickup (Midway) - Est: $95 (Sedan) / $130 (SUV)</option>
+                                    <option value="Airport Drop-off (O'Hare)">✈️ Airport Drop-off (O'Hare) - Est: $120 (Sedan) / $160 (SUV)</option>
+                                    <option value="Airport Drop-off (Midway)">✈️ Airport Drop-off (Midway) - Est: $95 (Sedan) / $130 (SUV)</option>
+                                </optgroup>
+                                <optgroup label="⏱️ TIME-BASED SERVICES">
+                                    <option value="Hourly Service">⏱️ Hourly Service (3-hour minimum) - $180 (Sedan) / $240 (SUV)</option>
+                                </optgroup>
+                                <optgroup label="🎉 SPECIAL EVENTS">
+                                    <option value="Corporate Event">💼 Corporate Event - Custom Quote</option>
+                                    <option value="Wedding/Special Event">💒 Wedding/Special Event - Custom Quote</option>
+                                </optgroup>
+                                <optgroup label="📍 OTHER SERVICES">
+                                    <option value="Point-to-Point Transfer">📍 Point-to-Point Transfer</option>
+                                    <option value="Other">➕ Other - Custom Quote</option>
+                                </optgroup>
+                            </select>
+                            <span class="form-error"></span>
+                        </div>
+                        
+                        <!-- VEHICLE TYPE SELECT -->
+                        <div class="form-group">
+                            <label><i class="fas fa-car-side"></i> Vehicle Type</label>
+                            <select name="vehicleType" required onchange="updatePrice()">
+                                <option value="">🚗 Select Vehicle...</option>
+                                <optgroup label="🏆 LUXURY FLEET">
+                                    <option value="sedan">🚗 Luxury Sedan - Up to 3 Passengers ($35 Deposit)</option>
+                                    <option value="suv">🏎️ Cadillac Escalade V - Up to 6 Passengers ($50 Deposit)</option>
+                                    <option value="premium">⭐ Premium Service - Hourly/Events ($70 Deposit)</option>
+                                </optgroup>
+                            </select>
+                            <span class="form-error"></span>
+                        </div>
+
+                    <!-- Row 7 -->
+                    <div class="form-group full-width">
+                        <label><i class="fas fa-comment"></i> Special Requests</label>
+                        <textarea name="specialRequests" placeholder="Child seats, specific route, music preference..."></textarea>
+                    </div>
+
+                    <!-- Row 8 -->
+                    <div class="form-group full-width">
+                        <label><i class="fas fa-info-circle"></i> How did you hear about us?</label>
+                        <input type="text" name="hearAbout" placeholder="Google, Friend, Social Media...">
+                    </div>
+                </div>
+
+                <!-- Pricing Info -->
+                <div class="pricing-card">
+                    <div class="pricing-content">
+                        <span class="pricing-label">💳 Deposit Required</span>
+                        <span class="pricing-amount" id="depositAmount">Select Vehicle</span>
+                    </div>
+                </div>
+
+                <!-- Agreement -->
+                <div class="agreement">
+                    <input type="checkbox" id="agreeTerms" required>
+                    <label for="agreeTerms">I agree to the <a href="#">Terms & Conditions</a></label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn">
+                    <span>Proceed to Payment</span>
+                    <i class="fas fa-lock"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-title">
+            <h2>Get In Touch</h2>
+            <p>We're Here to Help</p>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-card">
+                <i class="fas fa-phone"></i>
+                <h4>Call Us</h4>
+                <p>+1(708)-704-6696</p>
+            </div>
+            <div class="contact-card">
+                <i class="fas fa-envelope"></i>
+                <h4>Email</h4>
+                <p>armafleet.cadillac@gmail.com</p>
+            </div>
+            <div class="contact-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h4>Service Area</h4>
+                <p>Chicago & Surrounding</p>
+            </div>
+            <div class="contact-card">
+                <i class="fas fa-clock"></i>
+                <h4>Hours</h4>
+                <p>24/7 Available</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 ArmaFleet. Premium Luxury Transportation.</p>
+        <p>Drive Safe. Drive Luxury. Drive ArmaFleet.</p>
+    </footer>
+
+    <!-- Loading Modal -->
+    <div id="loadingModal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-loader"></div>
+            <h2>Processing Your Booking</h2>
+            <p>Redirecting to secure payment...</p>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
